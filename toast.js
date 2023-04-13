@@ -1,7 +1,13 @@
+window.addEventListener("DOMContentLoaded", (e) => {
+	let containerNotifications = document.createElement("div");
+	containerNotifications.id = "toasts"
+	document.body.appendChild(containerNotifications);
+});
+
 let configIcons = {
 	valid: 'fa-circle-check',
 	error: 'fa-circle-xmark',
-    warring: 'fa-circle-exclamation'
+    	warring: 'fa-circle-exclamation'
 }
 
 const toastNotif = (setting) => {
