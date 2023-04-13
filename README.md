@@ -61,14 +61,6 @@ toastNotif({
 		<link rel="stylesheet" type="text/css" href="./toast.css">
 	</head>
 	<body>
-		
-		....
-
-		<div id="toasts"></div>
-
-		....
-
-
 		<script type="text/javascript" src="./toast.js"></script>
 	</body>
 </html>
