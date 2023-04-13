@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo Toast Notification</title>
+	<link rel="stylesheet" type="text/css" href="./toast.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- Demo CSS -->
+	<style>
+		* {
+			font-family: Roboto;
+			color: white;
+		}
+
+		body {
+			background: #252525;
+		}
+
+		.demo {
+			margin-top: 80px;
+			text-align: center;
+		}
+
+		.demo button {
+			margin: 0 10px;
+			padding: 10px 20px;
+			background: #353535;
+			cursor: pointer;
+			font-size: 20px;
+			border: none;
+			border-radius: 10px;
+		}
+	</style>
+
+	<div id="toasts"></div>
+
+	<div class="demo">
+		<h1>Demo Notification Buttons</h1>
+
+		<button onclick="Success()" style="background: #5bc83f">
+			<i class="fa-solid fa-circle-check"></i> Success
+		</button>
+
+		<button onclick="Warring()" style="background: #ebb73f">
+			<i class="fa-solid fa-circle-exclamation"></i> Warring
+		</button>
+
+		<button onclick="Error()" style="background: #da4848">
+			<i class="fa-solid fa-circle-xmark"></i> Error
+		</button>
+	</div>
+
+	<script type="text/javascript" src="./toast.js"></script>
+	<script type="text/javascript">
+		
+		function Success() {
+			toastNotif({
+				text: 'Lorem Ipsum is simply dummy text of the printing',
+				color: '#5bc83f',
+				timeout: 5000,
+				icon: 'valid'
+			});
+		}
+
+		function Warring() {
+			toastNotif({
+				text: 'Lorem Ipsum is simply dummy text of the printing',
+				color: '#ebb73f',
+				timeout: 5000,
+				icon: 'warring'
+			});
+		}
+
+		function Error() {
+			toastNotif({
+				text: 'Lorem Ipsum is simply dummy text of the printing',
+				color: '#da4848',
+				timeout: 5000,
+				icon: 'error'
+			});
+		}
+	</script>
+</body>
+</html>
