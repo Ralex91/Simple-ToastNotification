@@ -31,8 +31,6 @@
 
   Page Body :
   ```html
-  <div id="toasts"></div>
-	...
   <script type="text/javascript" src="/assets/toast/toast.js"></script>
   ```
 
