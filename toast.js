@@ -1,7 +1,14 @@
 window.addEventListener("DOMContentLoaded", (e) => {
+	let headLinks = document.querySelector("head");
 	let containerNotifications = document.createElement("div");
-	containerNotifications.id = "toasts"
+	containerNotifications.id = "toasts";
+	
+	let link = document.createElement("link");
+	link.href = "./toast.css";
+	link.setAttribute("rel", "stylesheet");
+	
 	document.body.appendChild(containerNotifications);
+	headLinks.appendChild(link);
 });
 
 let configIcons = {
